@@ -73,7 +73,47 @@
 
 ## Declare Commits
 
-
+| #  | Git Command                        | Description                                                         |
+|----|------------------------------------|---------------------------------------------------------------------|
+| 1  | `git commit -m “(message)”`        | Commits the changes with a custom message.                          |
+| 2  | `git commit -am “(message)”`       | Adds all changes to staging and commits them with a custom message. |
+| 3  | `git checkout`                     | Switch to the provided Commit.                                      |
+| 4  | `git show`                         | Outputs the metadata and content changes of the specified Commit.   |
+| 5  | `git reset –hard`                  | Discard all the history and changes back to a given Commit.         |
+| 6  | `git reset –hard Head`             | Discards all local changes in the working directory.                |
+| 7  | `git log`                          | Shows the history of changes.                                       |
+| 8  | `git log -p`                       | Shows the full display of each Commit.                              |
+| 9  | `git log -oneline`                 | Shows the list of Commits with a simple message.                    |
+| 10 | `git log –follow (file_name)`      | List the history for the current file.                              |
+| 11 | `git blame (file_name)`            | Shows all changes along with the name of the user.                  |
+| 12 | `git stash`                        | Temporarily saves all modified tracked files.                       |
+| 13 | `git stash pop`                    | Restores the most recently stashed files                            |
+| 14 | `git stash list`                   | List all stash changed sets.                                        |
+| 15 | `git stash apply`                  | Apply the latest stashed contents.                                  |
+| 16 | `git stash drop`                   | Discard the most recently stashed files                             |
+| 17 | `git stash apply (stash id)`       | Re-apply a specific stash content by ID.                            |
+| 18 | `git stash drop (stash_id)`        | Drop a specific stash content by ID.                                |
+| 19 | `git push`                         | Push changes to the Origin.                                         |
+| 20 | `git push origin (branch_name)`    | Push branch to the Origin.                                          |
+| 21 | `Git push -f origin (branch_name)` | Force pushes the changes to the Origin.                             |
+| 22 | `git tag (tag_name)`               | Define a tag for a version.                                         |
 
 ## Branching
 
+| #  | Git Command               | Description                                                                       |
+|----|---------------------------|-----------------------------------------------------------------------------------|
+| 1  | `git branch`              | Shows the list of all branches.                                                   |
+| 2  | `git branch branch-name`  | Creates a new branch.                                                             |
+| 3  | `git branch -m`           | Renames the branch.                                                               |
+| 4  | `git branch -a`           | List all branches, local and remote.                                              |
+| 5  | `git checkout -b`         | Creates a branch and switch to it.                                                |
+| 6  | `git checkout`            | Switch to the provided branch.                                                    |
+| 7  | `git checkout -b origin/` | Get a remote branch from origin to the local directory.                           |
+| 8  | `git branch -d`           | Delete the specified branch.                                                      |
+| 9  | `git merge`               | Merge the current branch into the master (first checkout to master)               |
+| 10 | `git rebase`              | Takes all the changes of the branch and restate on others.                        |
+| 11 | `git rebase`              | Takes all the changes of the branch and restate on others.                        |
+| 12 | `git fetch remote`        | Fetches the specified branch from the repository.                                 |
+| 13 | `git diff ..`             | Shows the differences between two branches.                                       |
+| 14 | `git pull –rebase`        | Fetches the remote copy of the current branch and rebases it into the local copy. |
+| 15 | `git push –all`           | Push all the local branches to the specified remote repository.                   |
