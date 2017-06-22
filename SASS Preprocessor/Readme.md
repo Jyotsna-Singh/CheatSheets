@@ -1,7 +1,8 @@
 # SASS Preprocessor
 <p align="center">
   <br><br>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/sass.png">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/sass.png" height="200px" width="auto" />
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/scout.png" height="200px" width="auto" />
 </p>
 
 [http://sass-lang.com/](http://sass-lang.com/)
@@ -58,10 +59,6 @@ Mixin – Make groups of CSS declarations that you want to reuse throughout the 
 ### 8.)	Operators
 Doing math like +,-,*,/ in your SCSS file.
 
-<p align="center">
-  <br><br>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/scout.png">
-</p>
 
 ## To use SASS you need a compiler – Scout App
 1. Go to [http://scout-app.io/](http://scout-app.io/)
