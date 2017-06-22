@@ -99,8 +99,8 @@ Decorators allow us to mark a class as an Angular Component & provide metadata t
 <li>From Scratch
 <li>Using quickstart – github.com/angular/quickstart
 <li>Angular CLI Tool
-Npm install –g angular-cli
-Requirements: Node.js, NPM, Git
+<li>Npm install –g angular-cli
+<li>Requirements: Node.js, NPM, Git
 </ul>
 
 ## New project in AngularJS
