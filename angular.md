@@ -64,13 +64,14 @@
 <li>An angular application is a tree of Angular Components
 </ul>
 
-What are Decorators in AngularJS?
+## What are Decorators in AngularJS?
 Decorators allow us to mark a class as an Angular Component & provide metadata that determines how the component should be processed, instantiated & used at runtime.
 
 
 ## Example
 
     Import {Component} from ‘@angular/core’;
+    
     @Component({
 	  Selector: ‘my-component’,
 	  Template: ‘<div> hello my name is {{name}}.<button(click)=”sayMyName()”>Say My name</button></div>’
@@ -83,8 +84,8 @@ Decorators allow us to mark a class as an Angular Component & provide metadata t
     
     sayMyName(){
 	  console.log(‘My Name is’, this.name)
+    	}
     }
-  }
 
 ## Services in AngularJS
 <ul>
@@ -103,14 +104,15 @@ Requirements: Node.js, NPM, Git
 </ul>
 
 ## New project in AngularJS
-1.)	Git bash into your folder
-2.)	git clone https://github.com/angular/quickstart my-app
-3.)	cd my-app
-4.)	Open project in Atom Editor or Visual Studio
-5.)	All angular dependencies are listed in package.json
-6.)	npm install
-7.)	Create something awesome!
-
+<ol>
+<li> Git bash into your folder
+<li> git clone https://github.com/angular/quickstart my-app
+<li> cd my-app
+<li> Open project in Atom Editor or Visual Studio
+<li> All angular dependencies are listed in package.json
+<li> npm install
+<li> Create something awesome!
+</ol>
 
 
 
