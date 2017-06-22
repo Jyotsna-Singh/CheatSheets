@@ -3,7 +3,9 @@
   <br><br>
   <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/sass.png">
 </p>
+
 [http://sass-lang.com/](http://sass-lang.com/)
+
 ## Why use Sass? Features:
 1.)	Variables
 Example – variables like primary color can be set initially and then used throughout the project. Easily change the variable color & it will change throughout
@@ -12,13 +14,14 @@ Example – variables like primary color can be set initially and then used thro
 Easy structuring of CSS like HTML
 
     nav{
-	 ul{
-		margin:0;
- 	}
-	li{
-		color:red;
+		 ul{
+			margin:0;
+		}
+		li{
+			color:red;
+		}
 	}
-}
+
 
 ## 3.)	Preprocessing
 Large & complex stylesheets are hard to maintain. Sass file is processed to a normal css file.
@@ -38,23 +41,25 @@ Mixin – Make groups of CSS declarations that you want to reuse throughout the 
 
     @mixin border-radius($radius){
 	-webkit-border-radius: $radius
-}
+	}
 
 ## 7.)	Extend/Inheritance
 @extend lets you share a set of CSS properties from one selection to another
 
-    .message{
-	border: 1px solid #ccc;
-	padding: 10px;
-	color: #333;
-  }
-.success{
-	@entend .message;
-	Border-color: green;
-}
+	 .message{
+		border: 1px solid #ccc;
+		padding: 10px;
+		color: #333; 
+		}
+	
+	.success{
+		@entend .message;
+		Border-color: green;
+		}
 
 
-## 8.)	Operators – Doing math like +,-,*,/ in your SCSS file.
+## 8.)	Operators
+Doing math like +,-,*,/ in your SCSS file.
 
 <p align="center">
   <br><br>
