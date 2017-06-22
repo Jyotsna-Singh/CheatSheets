@@ -39,3 +39,41 @@
 | 5 | `git config –global –edit`         | Open global configuration file in the text editor for manual editing. |
 | 6 | `git config –global color.ui auto` | Enable helpful colourization of command line outputs.                 |
 
+## Setup a Git Repository
+
+| #  | Git Command                                                        | Description                                                       |
+|----|--------------------------------------------------------------------|-------------------------------------------------------------------|
+| 1  | `git init`                                                         | Initialize an empty Git repo in the current project.              |
+| 2  | `git clone (Repo URL)`                                             | Clone the repository from GitHub to the project folder.           |
+| 3  | `git clone (Repo URL) (Folder )`                                   | Clone the repository into a specific folder.                      |
+| 4  | `git remote add originhttps://github.com/username/(repo_name).git` | Create a remote repo pointing on your existing GitHub repository. |
+| 5  | `git remote`                                                       | Shows the name of remote repositories.                            |
+| 6  | `git remote -v`                                                    | Shows the name and the URL of the remote repositories.            |
+| 7  | `git remote rm (remote repo name)`                                 | Removes the remote repository.                                    |
+| 8  | `git remote set-url origin (git URL)`                              | Changes the URL of the repository.                                |
+| 9  | `git fetch`                                                        | Get the latest changes from the origin but not merge.             |
+| 10 | `git pull`                                                         | Get the latest changes from the origin and merge them.            |
+
+## Local File Changes
+
+|   | Git Command                                      | Description                                                       |
+|---|--------------------------------------------------|-------------------------------------------------------------------|
+| 1 | `git add (file name)`                            | Add the current changes to the file to staging.                   |
+| 2 | `git add .`                                      | Add the whole directory changes to staging (no delete files).     |
+| 3 | `git add -A`                                     | Add all new, modified and deleted files to staging.               |
+| 4 | `git rm (file_name)`                             | Removes the file and untracks (stop tracking) it.                 |
+| 5 | `git rm –cached (file_name)`                     | Untracks the current file.                                        |
+| 6 | `git mv,(file_name) (new_file_name)`             | Changes the filename and prepare it for Commit.                   |
+| 7 | `git checkout`                                   | Recovers the deleted file and prepares it for Commit              |
+| 8 | `git status`                                     | Shows the status of the modified files.                           |
+| 9 | `git ls-files –other –ignored –exclude-standard` | Shows the list of all ignored files.                              |
+| 10 | `git diff`                                       | Shows unstaged changes in the index and the working directory.    |
+| 11 | `git diff –staged`                               | Shows file differences between staging and the last file version. |
+| 12 | `git diff (file_name)`                           | Shows changes in a single file compared to the last Commit.       |
+
+## Declare Commits
+
+
+
+## Branching
+
