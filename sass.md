@@ -1,6 +1,9 @@
-#SASS Preprocessor
-
-sass-lang.com
+# SASS Preprocessor
+<p align="center">
+  <br><br>
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/sass.png">
+</p>
+[http://sass-lang.com/](http://sass-lang.com/)
 ## Why use Sass? Features:
 1.)	Variables
 Example – variables like primary color can be set initially and then used throughout the project. Easily change the variable color & it will change throughout
@@ -9,7 +12,7 @@ Example – variables like primary color can be set initially and then used thro
 Easy structuring of CSS like HTML
 
     nav{
-	ul{
+	 ul{
 		margin:0;
  	}
 	li{
@@ -53,8 +56,13 @@ Mixin – Make groups of CSS declarations that you want to reuse throughout the 
 
 ## 8.)	Operators – Doing math like +,-,*,/ in your SCSS file.
 
+<p align="center">
+  <br><br>
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/scout.png">
+</p>
+
 # To use SASS you need a compiler – Scout App
-1. Scout-app.io
+1. Go to [http://scout-app.io/](http://scout-app.io/)
 2. To install Scout, you need Java
 3. Open project in Scout.
 4. Add input – SCSS folder
