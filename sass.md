@@ -7,10 +7,10 @@
 [http://sass-lang.com/](http://sass-lang.com/)
 
 ## Why use Sass? Features:
-1.)	Variables
+### 1.)	Variables
 Example – variables like primary color can be set initially and then used throughout the project. Easily change the variable color & it will change throughout
 
-## 2.)	Nesting
+### 2.)	Nesting
 Easy structuring of CSS like HTML
 
     nav{
@@ -23,19 +23,16 @@ Easy structuring of CSS like HTML
 	}
 
 
-## 3.)	Preprocessing
-Large & complex stylesheets are hard to maintain. Sass file is processed to a normal css file.
-
-## 4.)	Partials
+### 4.)	Partials
 Modularize your CSS & help keep things easier to maintain. Used with @import derivative, naming convention _partial.scss
 Include CSS in other CSS file.
 
-## 5.)	Import
+### 5.)	Import
 CSS has option to split CSS into smaller, maintainable portions.
 Drawback – Everytime you used @import in CSS, it creates another HTTP request
 SASS builds on top of current CSS @import but instead of requiring an HTTP request, SASS will take the file that you want to import & combine it with the file you’re importing -> Serve a single CSS file to the web browser.
 
-## 6.)	Mixins
+### 6.)	Mixins
 Vendor prefixes are tedious! Period!
 Mixin – Make groups of CSS declarations that you want to reuse throughout the site.
 
@@ -43,7 +40,7 @@ Mixin – Make groups of CSS declarations that you want to reuse throughout the 
 	-webkit-border-radius: $radius
 	}
 
-## 7.)	Extend/Inheritance
+### 7.)	Extend/Inheritance
 @extend lets you share a set of CSS properties from one selection to another
 
 	 .message{
@@ -58,7 +55,7 @@ Mixin – Make groups of CSS declarations that you want to reuse throughout the 
 		}
 
 
-## 8.)	Operators
+### 8.)	Operators
 Doing math like +,-,*,/ in your SCSS file.
 
 <p align="center">
@@ -66,7 +63,7 @@ Doing math like +,-,*,/ in your SCSS file.
   <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/scout.png">
 </p>
 
-# To use SASS you need a compiler – Scout App
+## To use SASS you need a compiler – Scout App
 1. Go to [http://scout-app.io/](http://scout-app.io/)
 2. To install Scout, you need Java
 3. Open project in Scout.
