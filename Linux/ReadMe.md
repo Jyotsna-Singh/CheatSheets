@@ -96,16 +96,16 @@
 
 | #  | Command  | Description                                                                                                   |
 |----|----------|---------------------------------------------------------------------------------------------------------------|
-| 1  | Ctrl + A | Move your cursor to the beginning of the line                                                                 |
-| 2  | Ctrl + E | Move your cursor to the End of the line (E ­­ > end)                                                          |
-| 3  | Ctrl + D | Delete the character at the cursor location                                                                   |
-| 4  | Ctrl + F | Move your cursor Forward one character. Same as your right arrow key                                          |
-| 5  | Ctrl + B | Move your cursor Backward one character. Same as your left arrow key                                          |
-| 6  | Alt + F  | Move your cursor Forward one word (Jump to the next word)                                                     |
-| 7  | Alt + B  | Move your cursor Backward one word (Jump to the previous word)                                                |
-| 8  | Alt + L  | Convert all the characters beginning from the cursor location to end of the word to Lowercase.                |
-| 9  | Alt + U  | Convert all the characters beginning from the cursor location to end of the word to Uppercase.                |
-| 10 | Ctrl + K | Cut the text from the cursor location to the end of the line. In Linux, we say Kill text (Just like Cut text) |
-| 11 | Ctrl + U | Cut the text from the cursor location to the beginning of the line.                                           |
-| 12 | Ctrl + Y | Paste the text that you did cut. Pasting in Linux is Yanking                                                  |
-| 13 | Ctrl + L | Clear the screen just like the clear command                                                                  |
+| 1  | `Ctrl + A` | Move your cursor to the beginning of the line                                                                 |
+| 2  | `Ctrl + E` | Move your cursor to the End of the line (E ­­ > end)                                                          |
+| 3  | `Ctrl + D` | Delete the character at the cursor location                                                                   |
+| 4  | `Ctrl + F` | Move your cursor Forward one character. Same as your right arrow key                                          |
+| 5  | `Ctrl + B` | Move your cursor Backward one character. Same as your left arrow key                                          |
+| 6  | `Alt + F`  | Move your cursor Forward one word (Jump to the next word)                                                     |
+| 7  | `Alt + B`  | Move your cursor Backward one word (Jump to the previous word)                                                |
+| 8  | `Alt + L`  | Convert all the characters beginning from the cursor location to end of the word to Lowercase.                |
+| 9  | `Alt + U`  | Convert all the characters beginning from the cursor location to end of the word to Uppercase.                |
+| 10 | `Ctrl + K` | Cut the text from the cursor location to the end of the line. In Linux, we say Kill text (Just like Cut text) |
+| 11 | `Ctrl + U` | Cut the text from the cursor location to the beginning of the line.                                           |
+| 12 | `Ctrl + Y` | Paste the text that you did cut. Pasting in Linux is Yanking                                                  |
+| 13 | `Ctrl + L` | Clear the screen just like the clear command                                                                  |
