@@ -24,4 +24,15 @@
 | 2 | `ls ~`                  | This will list the files in your home directory                                                                                                                                   |
 | 3 | `ls ..`                 | This will list the files of your parent directory                                                                                                                                 |
 | 4 | `ls /home/user/Desktop` | Here we are using the absolute pathname to list the files that are present on user's Desktop.,Put your username instead of user to see the files that are present on your desktop |
-| 5 | `ls ~/Desktop`          | Here we are using the relative pathname to list the files that are present on your Desktop.                                                                                       |
+| 5 | `ls ~/Desktop`          | Here we are using the relative pathname to list the files that are present on your Desktop.            |
+
+
+## ls command options
+
+| # | Command  | Description                                                                                                                                                             |
+|---|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | `ls -a` | This will list all the files in your current working directories including hidden files that start with .                                                               |
+| 2 | `ls -l` | That's a long listing that we saw before, It shows many impotant information about a file. Permssions,Number of Links,Owner,Group,File size,Modification Date,File name |
+| 3 | `ls -t` | This will list the files sorted by modification date. Newest first                                                                                                      |
+| 4 | `ls -r` | This will list the files in reversed fashion.                                                                                                                           |
+| 5 | `ls -i` | This will list the index node number of each file in the current working directory                                                                                      |
