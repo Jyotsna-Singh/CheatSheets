@@ -74,3 +74,38 @@
 | 2 | `cp -i file1 file2`     | Same as above. But if file2 exists, the user is prompted before it is overwritten.                                                                     |
 | 3 | `cp -r file1 dir1 dir2` | Copy file1 and dir1 into dir2. The destination dir2 must exists for the command to execute.                                                            |
 | 4 | `cp -r dir1 dir2`       | Here we have two cases.If dir2 exist then dir1 will be copied into dir2.If dir2 doesn't exist then, dir2 will be created which is just a copy for dir1 |
+
+
+## mv options
+
+| # | Command | Description                                                                                                                                                                      |
+|---|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | `mv -i` | Before overwriting an existing file, prompt the user for confirmation.If this option is not specified. mv will silently overwrite files by default.i here means interactive mode |
+| 2 | `mv -v` | Verbose mode (print the name of each file that was moved or renamed). It explains what is being done all the time.v here means verbose.                                          |
+
+## mv examples
+
+| # | Command              | Description                                                                                                            |
+|---|----------------------|------------------------------------------------------------------------------------------------------------------------|
+| 1 | `mv file1 file2`     | Rename file1 to file2. If file2 exists, it is overwritten with the contents of file1.                                  |
+|   | `mv -i file1 file2`  | Same as above. But if file2 exists, the user is prompted before it is overwritten.                                     |
+|   | `mv file1 dir1 dir2` | Copy file1 and dir1 into dir2. The destination dir2 must exists for the command to execute.                            |
+| 2 | `mv dir1 dir2`       | Here we have two cases.If dir2 exist then dir1 will be moved into dir2.If dir2 doesn't exist then, rename dir1 to dir2 |
+
+## Keyboard Shortcuts
+
+| #  | Command  | Description                                                                                                   |
+|----|----------|---------------------------------------------------------------------------------------------------------------|
+| 1  | Ctrl + A | Move your cursor to the beginning of the line                                                                 |
+| 2  | Ctrl + E | Move your cursor to the End of the line (E ­­ > end)                                                          |
+| 3  | Ctrl + D | Delete the character at the cursor location                                                                   |
+| 4  | Ctrl + F | Move your cursor Forward one character. Same as your right arrow key                                          |
+| 5  | Ctrl + B | Move your cursor Backward one character. Same as your left arrow key                                          |
+| 6  | Alt + F  | Move your cursor Forward one word (Jump to the next word)                                                     |
+| 7  | Alt + B  | Move your cursor Backward one word (Jump to the previous word)                                                |
+| 8  | Alt + L  | Convert all the characters beginning from the cursor location to end of the word to Lowercase.                |
+| 9  | Alt + U  | Convert all the characters beginning from the cursor location to end of the word to Uppercase.                |
+| 10 | Ctrl + K | Cut the text from the cursor location to the end of the line. In Linux, we say Kill text (Just like Cut text) |
+| 11 | Ctrl + U | Cut the text from the cursor location to the beginning of the line.                                           |
+| 12 | Ctrl + Y | Paste the text that you did cut. Pasting in Linux is Yanking                                                  |
+| 13 | Ctrl + L | Clear the screen just like the clear command                                                                  |
