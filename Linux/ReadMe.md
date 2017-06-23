@@ -45,3 +45,32 @@
 | 3 | `rm -v` | Verbose mode (print the name of each file before removing it). It explains what is being done all the time.v here means verbose.                                                                                                                                     |
 | 4 | `rm -R` | Recursively delete files.If the file is a directory, remove the entire directory and all its contents, including subdirectories. To delete a directory, this option must be specified. R here means Recursive                                                        |
 | 5 | `rm -r` | Same like rm -R                                                                                                                                                                                                                                                      |
+
+
+## rm examples
+
+| # | Command             | Description                                                                                 |
+|---|---------------------|---------------------------------------------------------------------------------------------|
+| 1 | `rm file1`          | Delete file1 silently                                                                       |
+| 2 | `rm -i file1`       | Before deleting file1, prompt the user for confirmation                                     |
+| 3 | `rm -r file1 dir1`  | Delete file1 and dir1 and its contents. Ofcourse, we mean the contents of dir1              |
+| 4 | `rm -rf file1 dir1` | Same as above, except that if either file1 or dir1 does not exit, rm will continue silently |
+
+
+## cp options
+
+| # | Command | Description                                                                                                                                                                      |
+|---|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | `cp -i` | Before overwriting an existing file, prompt the user for confirmation.If this option is not specified. cp will silently overwrite files by default.i here means interactive mode |
+| 2 | `cp -v` | Verbose mode (print the name of each file that was copied). It explains what is being done all the time.v here means verbose.                                                    |
+| 3 | `cp -R` | Recursively copy directories and their contents.Just like the rm command, this option must be specified when copying a directoryR here means Recursive                           |
+| 4 | `cp -r` | Same like cp -R                                                                                                                                                                  |
+
+## cp examples
+
+| # | Command                  | Description                                                                                                                                            |
+|---|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | `cp file1 file2`         | Make a copy of file1 named file2. If file2 exists, it is overwritten with the contents of file1.                                                       |
+| 2 | `cp -i file1 file2`     | Same as above. But if file2 exists, the user is prompted before it is overwritten.                                                                     |
+| 3 | `cp -r file1 dir1 dir2` | Copy file1 and dir1 into dir2. The destination dir2 must exists for the command to execute.                                                            |
+| 4 | `cp -r dir1 dir2`       | Here we have two cases.If dir2 exist then dir1 will be copied into dir2.If dir2 doesn't exist then, dir2 will be created which is just a copy for dir1 |
