@@ -36,3 +36,12 @@
 | 3 | `ls -t` | This will list the files sorted by modification date. Newest first                                                                                                      |
 | 4 | `ls -r` | This will list the files in reversed fashion.                                                                                                                           |
 | 5 | `ls -i` | This will list the index node number of each file in the current working directory                                                                                      |
+## rm options
+
+| # | Command | Description                                                                                                                                                                                                                                                          |
+|---|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | `rm -i` | Prompt you before removing any existing file. It's kind of like a double check policy.You use it when you want to make sure that you are aware of every file you remove.If this option is not specified, rm will silently dielete filesi here means interactive mode |
+| 2 | `rm -f` | Never prompt you before removing a file. And will not display a warning message if the file you are trying to remove doesn't exist, Meaning that it will ignore non existant files.f here means force (forcefully remove files)                                      |
+| 3 | `rm -v` | Verbose mode (print the name of each file before removing it). It explains what is being done all the time.v here means verbose.                                                                                                                                     |
+| 4 | `rm -R` | Recursively delete files.If the file is a directory, remove the entire directory and all its contents, including subdirectories. To delete a directory, this option must be specified. R here means Recursive                                                        |
+| 5 | `rm -r` | Same like rm -R                                                                                                                                                                                                                                                      |
