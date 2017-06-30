@@ -6,8 +6,8 @@
   <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/browsersync.png" width="100px" height="auto">
   <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/babel.png" width="100px" height="auto"/>
   <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/gulp.jpg" width="80px" height="auto">
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/postcss.png" width="100px" height="auto"/>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png" width="100px" height="auto">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/postcss.png" width="120px" height="auto"/>
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png" width="120px" height="auto">
 </p>
 
 ## Index
@@ -21,14 +21,14 @@
 
 ## Fundamental Concepts
 
-### What is Node/Node.js?
+### What is Node/Node.js?  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/node.png" width="60px" height="auto" />
 Node.js is an open source server framework that allows you to run JavaScript on the server.
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
 
-### What is npm?
+### What is npm? <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/npm.png" width="70px" height="auto">
 Node Package Manager. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.A repository of Node code, as well as third-party libraries such as Bootstrap and jQuery. Allows for easy installation and updating from the command line.
 
-### What is Gulp?
+### What is Gulp? <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/gulp.jpg" width="50px" height="auto">
 Gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.
 
 ## Pre-requisites
@@ -89,8 +89,8 @@ gulp.task('watch', function() {
 });
 ```
 
-**7.** Set up **post-css** with **autoprefixer** (automatic webkit prefixes to ensure browser css compatibility); **simple-vars** (use variables in css); **nested** (nesting selectors in css) and **import** (write modular css across different files).
-
+**7.** Set up **post-css** with **autoprefixer** (automatic webkit prefixes to ensure browser css compatibility); **simple-vars** (use variables in css); **nested** (nesting selectors in css) and **import** (write modular css across different files).<img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/postcss.png" width="100px" height="auto"/>
+  
 ```
 npm install gulp-postcss --save-dev
 npm install autoprefixer --save-dev
