@@ -46,3 +46,71 @@ To check if you have Node.js installed, run this command in your terminal:
 To confirm that you have npm installed you can run this command in your terminal:
    ` npm -v`
     
+## Initializing a new project
+
+**1.** Bash into the project folder & run `npm init`. This sets up NPM for the project, and creates *package.json*, which will store config info on the packages used in the project.It will ask some questions before creating the package.json file.
+
+**2.** Run `npm install jquery --save`. (If jquery is needed in the project)
+(If node modules get deleted or outdated, run `npm install` to get fresh version of packages listed in package.json)
+
+**3.** Install gulp cli. `npm install gulp-cli -global`. Run `gulp -v` to check CLI version.
+
+**4.** Install gulp package in your project. `npm install gulp --save-dev`
+
+**5.** Create *gulpfile.js* in project root `touch gulpfile.js `. Add placeholder tasks to the file:
+
+```
+var gulp = require(‘gulp’);
+
+	gulp.task('default', function() {
+  		console.log("Yay, Gulp default task");
+	});
+
+	gulp.task(‘html’, function() {
+		console.log(“Woohoo!! html task”);
+	});
+
+	gulp.task(‘styles’, function() {
+		console.log(“Yippee..styles task”);
+	});
+```
+
+**6.** Install the gulp-watch package `npm install gulp-watch --save-dev`
+
+add to *gulpfile.js*:
+```
+watch = require('gulp-watch’);
+
+gulp.task('watch', function() {
+  watch('./app/index.html',
+    function(){
+      gulp.start('html');
+    });
+});
+```
+
+**7.** Set up **post-css** with **autoprefixer** (automatic webkit prefixes to ensure browser css compatibility); **simple-vars** (use variables in css); **nested** (nesting selectors in css) and **import** (write modular css across different files).
+
+```
+npm install gulp-postcss --save-dev
+npm install autoprefixer --save-dev
+npm install postcss-simple-vars --save-dev
+npm install postcss-nested --save-dev
+npm install postcss-import --save-dev
+```
+
+add to *gulpfile.js*:
+```
+postcss = require('gulp-postcss’),
+autoprefixer = require(‘autoprefixer’),
+cssvars = require('postcss-simple-vars’),
+nested = require('postcss-nested’),
+cssImport = require('postcss-import');
+
+
+gulp.task('styles', function() {
+  return gulp.src('app/assets/styles/styles.css')
+    .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
+    .pipe(gulp.dest('app/temp/styles'));
+});
+```
