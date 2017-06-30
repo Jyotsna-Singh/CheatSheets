@@ -1,13 +1,13 @@
 # Modern Front End Developer Workflow - Gulp & Node
 <p align="center">
   <br><br>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/npm.png"/>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/node.png">
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/gulp.jpg">
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/browsersync.png">
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/babel.png"/>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/postcss.png"/>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/npm.png" width="150px" height="auto" />
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/node.png" width="80px" height="auto">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/browsersync.png" width="100px" height="auto">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/babel.png" width="100px" height="auto"/>
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/gulp.jpg" width="80px" height="auto">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/postcss.png" width="100px" height="auto"/>
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png" width="100px" height="auto">
 </p>
 
 ## Index
