@@ -365,11 +365,37 @@ Edit *sprites.js*
 `rename = require('gulp-rename');`
 
 ```
-gulp.task('copySpriteCSS', function(){
+gulp.task('copySpriteCSS', ['createSprite'], function(){
   return gulp.src('./app/temp/sprite/css/*.css')
     .pipe(rename('_sprite.css'))
     .pipe(gulp.dest('./app/assets/styles/modules'));
 });
+
+gulp.task('icons', ['createSprite', 'copySpriteCSS']);
 ```
 
 Add to *app/assets/styles/styles.css* `@import "modules/_sprite";`
+
+**6.** Move svg files from temp folder to assets folder by Editing sprites.js
+
+```
+var config = {
+  mode: {
+    css: {
+      sprite: 'sprite.svg',
+      render: {
+        css: {
+          template: './gulp/templates/sprite.css'
+        }
+      }
+    }
+  }
+}
+
+gulp.task('copySpriteGraphic', ['createSprite'], function(){
+  return gulp.src('./app/temp/sprite/css/**/*.svg')
+    .pipe(gulp.dest('./app/assets/images/sprites'));
+});
+
+gulp.task('icons', ['createSprite','copySpriteGraphic', 'copySpriteCSS']);
+```
