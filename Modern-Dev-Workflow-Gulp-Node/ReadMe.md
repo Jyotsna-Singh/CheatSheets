@@ -399,3 +399,45 @@ gulp.task('copySpriteGraphic', ['createSprite'], function(){
 
 gulp.task('icons', ['createSprite','copySpriteGraphic', 'copySpriteCSS']);
 ```
+
+Edit *sprite.css* to remove repetitive icon urls
+```
+.icon{
+  background-image: url('/assets/images/sprite/{{{sprite}}}');
+}
+
+{{#shapes}}
+  {{#first}}
+    .icon{
+      background-image: url('/temp/sprite/css/{{{sprite}}}');
+    }
+  {{/first}}
+  .icon--{{base}} {
+    width: {{width.outer}}px;
+    height: {{height.outer}}px;
+    background-position: {{position.relative.xy}};
+  }
+{{/shapes}}
+
+```
+Use sprite icons in *index.html* `<span class="icon icon--star"></span>`
+
+**7.** Clean task to delete duplicate .svg files (e.g, if you delete one icon, the new sprite file will not replace the old one and create another version of the .svg file)
+
+Install del package `npm install del --save-dev`
+
+Updating *gulpfile.js* by creating beginClean task and adding it to `icons` task.
+```
+del = require('del');
+gulp.task('beginClean', function(){
+  return del(['./app/temp/sprite', './app/assets/images/sprites']);
+});
+```
+
+End the clean task to delete temp sprite folder
+
+```
+gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function(){
+    return del('./app/temp/sprite');
+});
+```
