@@ -293,9 +293,20 @@ Use the `<picture>` tag with media attribute:
 	<img src=“images/dog-crop-small.jpg” alt=“Puppy in the sand.”>
 </picture>
 ```
+<p align="center">
+  <br><br>
+<img src="https://github.com/Jyotsna-Singh/CheatSheets/blob/master/Modern-Dev-Workflow-Gulp-Node/our-start.jpg">
+<img src="https://github.com/Jyotsna-Singh/CheatSheets/blob/master/Modern-Dev-Workflow-Gulp-Node/our-start-portrait.jpg">
+<img src="https://github.com/Jyotsna-Singh/CheatSheets/blob/master/Modern-Dev-Workflow-Gulp-Node/our-start-landscape.jpg">
+</p>
 
 **2. Image resolution / file size**
 Use `srcset`. The number after each image denotes the width of the image The browser/device uses this to determine which is the most appropriate to download, and doesn’t download the alternatives.
 ```
 <img srcset=“images/dog-res-small.jpg 570w, images/dog-res-medium.jpg 1200w, images/dog-res-large.jpg 1920w” alt=“Puppy in the sand”>
 ```
+<p align="center">
+  <br><br>
+<img src="https://github.com/Jyotsna-Singh/CheatSheets/blob/master/Modern-Dev-Workflow-Gulp-Node/testimonial-jane-hi-dpi-i.jpg">
+<img src="https://github.com/Jyotsna-Singh/CheatSheets/blob/master/Modern-Dev-Workflow-Gulp-Node/testimonial-jane-i.jpg">
+</p>
