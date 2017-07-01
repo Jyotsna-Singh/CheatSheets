@@ -26,6 +26,7 @@
 
 [Automatic Sprites](#automatic-Sprite)
 
+[Object-oriented Javascript and Webpack](#oop-js-webpack)
 
 ## Fundamental Concepts
 
@@ -441,3 +442,48 @@ gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function(){
     return del('./app/temp/sprite');
 });
 ```
+## Object-oriented Javascript and Webpack
+Blueprint in JavaScript (classes in other OOP languages). ECMA5 way of creating "classes". Later, after installing Babel, we can use the ECMA6 class constructor 
+```
+function Person(fullName, profession) {
+this.name = fullName;
+this.profession = profession;
+this.greet = function() {
+	console.log(“Hi, my name is “ + this.name + “ and I am a “ + this.profession “ .”;
+	}
+}
+
+var jyo = new Person(“Jyotsna Singh”, “Fullstack Developer”)
+jyo.greet();
+```
+JS doesn’t have a native ‘require’ function. We can use Webpack to allow us to store class constructors etc in separate .js files i.e. make it modular.
+
+**1.** Create: `app/assets/scripts/App.js` `app/assets/scripts/modules/`
+
+Modules (e.g. Person.js) will go in the modules/ folder. Then, require them at the top of App.js e.g. 
+`var Person = require(‘./modules/Person’);`
+
+Webpack will compile all the js modules into a single file that the browser can then read.
+
+**2.** Install webpack globally `npm install webpack -g`
+
+**3.** Create *webpack.config.js* in the project root folder
+```
+module.exports = {
+	entry: “./app/assets/scripts/App.js”,
+	output: {
+		path: “./app/temp/scripts”,
+		filename: “App.js”
+		}
+}
+```
+
+**4.** Run `webpack` in node.js command prompt
+
+**5.** Update path to script file in index.html to point to assets/temp/scripts/App.js
+
+Each js module (e.g. Person.js) will need an export line at the end, so that Webpack knows what to do with it. 
+`module.exports = Person;`
+
+**6.** Webpack can also require third-party modules such as jquery.
+If using jquery in project, first install it with `npm install jquery --save`. Then, in each module that uses jquery, at the top put `var $ = require('jquery');
