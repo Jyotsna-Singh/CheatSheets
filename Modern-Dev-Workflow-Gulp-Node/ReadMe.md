@@ -24,7 +24,7 @@
 
 [Responsive Images](#responsive-images)
 
-[Automatic Sprites](#automaticSprite)
+[Automatic Sprites](#automatic-Sprite)
 
 
 ## Fundamental Concepts
@@ -315,7 +315,9 @@ Use `srcset`. The number after each image denotes the width of the image The bro
 
 
 ## Automatic Sprites
+
 Configure Gulp to automatically create an Icon Sprite. Make our site load faster for visitors
+
 **1.** Install svg-sprite package `npm install gulp-svg-sprite@1.3.1 --save-dev`
 
 **2.** In gulp/tasks create *sprites.js*
@@ -354,3 +356,20 @@ gulp.task('createSprite', function(){
   }
 {{/shapes}}
 ```
+**5.** Copy *sprite.css* file to *app/assets/styles/modules/_sprite.css* & Rename file to *_sprite.css* to match existing code
+
+Install rename package `npm install gulp-rename --save-dev`
+
+Edit *sprites.js*
+
+`rename = require('gulp-rename');`
+
+```
+gulp.task('copySpriteCSS', function(){
+  return gulp.src('./app/temp/sprite/css/*.css')
+    .pipe(rename('_sprite.css'))
+    .pipe(gulp.dest('./app/assets/styles/modules'));
+});
+```
+
+Add to *app/assets/styles/styles.css* `@import "modules/_sprite";`
