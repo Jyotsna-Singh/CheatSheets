@@ -342,3 +342,15 @@ gulp.task('createSprite', function(){
 });
 ```
 **3.** Add to *gulpfile.js*`require('./gulp/tasks/sprites');`
+
+**4.** Create folder & file *gulp/templates/sprite.css*. In the sprite.css file add the following (moustache template `{`)
+```
+{{#shapes}}
+  .icon--{{base}} {
+    width: {{width.outer}}px;
+    height: {{height.outer}}px;
+    background-image: url('/temp/sprite/css/{{{sprite}}}');
+    background-position: {{position.relative.xy}};
+  }
+{{/shapes}}
+```
