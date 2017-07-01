@@ -18,6 +18,8 @@
 
 [Initializing a new project](#initializing-a-new-project)
 
+[BrowserSync](#browserSync)
+
 
 ## Fundamental Concepts
 
@@ -143,4 +145,72 @@ gulp.task('styles', function() {
 @import “base/_global.css”;
 @import “modules/_footer.css”;
 
+```
+
+## BrowserSync
+Update gulp to auto-refresh the web browser whenever we change html/css. Also view & control webpage from multiple devices on same wifi (mobile, tablet, laptop)
+
+**1.** Gulp watch `npm install gulp-watch --save-dev`
+
+**2.** BrowserSync package `npm install browser-sync --save-dev`
+
+**3.** Update *gulpfile.js* 
+```
+var watch = require('gulp-watch'),
+browserSync = require('browser-sync').create();
+```
+
+Updating the watch task:
+```
+gulp.task('watch', function() {
+
+  browserSync.init({
+    server: {
+      baseDir: "app"
+    }
+  });
+
+  watch('./app/index.html', function() {
+    browserSync.reload();
+  });
+
+  watch('./app/assets/styles/**/*.css', function() {
+    gulp.start(‘cssInject’);
+  });
+});
+```
+Adding cssinject task to *gulpfile.js*:
+
+```
+gulp.task('cssInject', ['styles'], function() {
+  return gulp.src('app/temp/styles/**/*.css')
+    .pipe(browserSync.stream());
+});
+```
+
+**4.** Use the External IP to view and control webpage from all devices simultaneously. (Mobile, Tablet, Laptop, Desktop -Any device,Any browser - They just need to be on the same wifi)
+  <img src="https://github.com/Jyotsna-Singh/CheatSheets/blob/master/Modern-Dev-Workflow-Gulp-Node/browsersyncdemo.PNG">
+
+**5.** Maintainable gulpfile by putting tasks into *gulp/tasks* as separate files e.g. *watch.js*, *styles.js*
+Edited *gulpfile.js* :
+
+```
+require('./gulp/tasks/styles');
+require('./gulp/tasks/watch');
+```
+
+**6.** Gulp error handling for styles task, otherwise css syntax errors will cause browsersync/watch task to halt.
+
+Edit *gulp/tasks/styles.js* :
+
+```
+gulp.task('styles', function() {
+  return gulp.src('./app/assets/styles/styles.css')
+    .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
+    .on('error', function(errorInfo) {
+	console.log(errorInfo.toString());
+      this.emit('end');
+    })
+    .pipe(gulp.dest('./app/temp/styles'));
+});
 ```
