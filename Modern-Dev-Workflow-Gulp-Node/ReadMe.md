@@ -24,6 +24,8 @@
 
 [Responsive Images](#responsive-images)
 
+[Automatic Sprites](#automaticSprite)
+
 
 ## Fundamental Concepts
 
@@ -310,3 +312,33 @@ Use `srcset`. The number after each image denotes the width of the image The bro
 <img src="https://github.com/Jyotsna-Singh/CheatSheets/blob/master/Modern-Dev-Workflow-Gulp-Node/testimonial-jane-hi-dpi-i.jpg">
 <img src="https://github.com/Jyotsna-Singh/CheatSheets/blob/master/Modern-Dev-Workflow-Gulp-Node/testimonial-jane-i.jpg">
 </p>
+
+
+## Automatic Sprites
+Configure Gulp to automatically create an Icon Sprite. Make our site load faster for visitors
+**1.** Install svg-sprite package `npm install gulp-svg-sprite@1.3.1 --save-dev`
+
+**2.** In gulp/tasks create *sprites.js*
+```
+var gulp = require('gulp');
+svgSprite = require('gulp-svg-sprite');
+
+var config = {
+  mode: {
+    css: {
+      render: {
+        css: {
+          template: './gulp/templates/sprite.css'
+        }
+      }
+    }
+  }
+}
+
+gulp.task('createSprite', function(){
+  return gulp.src('./app/assets/images/icons/**/*.svg')
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest('./app/temp/sprite/'));
+});
+```
+**3.** Add to *gulpfile.js*`require('./gulp/tasks/sprites');`
