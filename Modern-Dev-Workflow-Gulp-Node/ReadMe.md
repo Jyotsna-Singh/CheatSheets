@@ -1,13 +1,13 @@
 # Modern Front End Developer Workflow - Gulp & Node
 <p align="center">
   <br><br>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/npm.png" width="150px" height="auto" />
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/node.png" width="80px" height="auto">
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/browsersync.png" width="100px" height="auto">
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/babel.png" width="100px" height="auto"/>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/gulp.jpg" width="80px" height="auto">
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/postcss.png" width="120px" height="auto"/>
-  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png" width="120px" height="auto">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/npm.png" width="300px" height="auto" />
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/node.png" width="150px" height="auto">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/browsersync.png" width="300px" height="auto">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/babel.png" width="300px" height="auto"/>
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/gulp.jpg" width="120px" height="auto">
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/postcss.png" width="300px" height="auto"/>
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png" width="300px" height="auto">
 </p>
 
 ## Index
@@ -89,7 +89,7 @@ gulp.task('watch', function() {
 });
 ```
 
-**7.** Set up **post-css** with **autoprefixer** (automatic webkit prefixes to ensure browser css compatibility); **simple-vars** (use variables in css); **nested** (nesting selectors in css) and **import** (write modular css across different files).<img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/postcss.png" width="100px" height="auto"/>
+**7.** <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/postcss.png" width="100px" height="auto"/>Set up **post-css** with **autoprefixer** (automatic webkit prefixes to ensure browser css compatibility); **simple-vars** (use variables in css); **nested** (nesting selectors in css) and **import** (write modular css across different files).
   
 ```
 npm install gulp-postcss --save-dev
@@ -113,4 +113,34 @@ gulp.task('styles', function() {
     .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
     .pipe(gulp.dest('app/temp/styles'));
 });
+```
+**8.** Adding stylesheet to *app/index.html*:
+
+```
+<link rel="stylesheet" href="temp/styles/styles.css">
+```
+
+**8.** CSS Architecture - Modular CSS
+````
+|-app
+	index.html
+		|- assets
+			|-fonts
+			|-images
+			|-styles
+				styles.css
+				|-base
+					_global.css
+				|-modules
+					_header.css
+					_footer.css
+
+````
+
+**9.** Import css modules in *styles.css* 
+
+```
+@import “base/_global.css”;
+@import “modules/_footer.css”;
+
 ```
