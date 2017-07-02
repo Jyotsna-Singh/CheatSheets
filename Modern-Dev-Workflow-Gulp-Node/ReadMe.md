@@ -28,6 +28,8 @@
 
 [Object-oriented Javascript and Webpack](#oop-js-webpack)
 
+[Babel](#babel)
+
 ## Fundamental Concepts
 
 ### What is Node/Node.js?  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/node.png" width="60px" height="auto" />
@@ -488,7 +490,12 @@ Each js module (e.g. Person.js) will need an export line at the end, so that Web
 **6.** Webpack can also require third-party modules such as jquery.
 If using jquery in project, first install it with `npm install jquery --save`. Then, in each module that uses jquery, at the top put `var $ = require('jquery');`
 
-### Integrate Webpack in Gulp Automation  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png" width="300px" height="auto">
+<p align="center">
+<img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png" width="500px" height="auto">
+</p>
+
+### Integrate Webpack in Gulp Automation  
+
 Browsersync will automatically update if a .js file is edited:
 
 **1.** Install webpack locally `npm install webpack --save-dev`
@@ -526,3 +533,45 @@ gulp.task(‘scriptsRefresh’, [‘scripts’], function() {
 ```
 
 Now, webpack will compile a js file for the browser to use from our main file and modules into App.js in the temp folder; and browserSync will automatically update the browser when any js files are edited. If there are any errors it will throw them up without causing browsersync to end.
+
+
+## Babel
+<p align="center">
+  <br><br>
+  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/babel.png" width="500px" height="auto"/>
+</p>
+ Babel enables us to write ES6 code, which it then converts to ES5 code to ensure browser compatibility.
+ 
+**1.** Install Babel packages `npm install babel-core babel-loader babel-preset-es2015 --save-dev`
+
+**2.** Edit *webpack.config.js* so the whole thing reads as follows. Webpack will run the code through Babel before creating the dist version of App.js.
+```
+module.exports = {
+	entry: “./app/assets/scripts/App.js”,
+	output: {
+		path: “./app/temp/scripts”,
+		filename: “App.js”
+		},
+		modules: {
+			loaders: [
+				{
+					loader: ‘babel’,
+					query: {
+						presets: [‘es2015’]
+					},
+					test: /\.js$/,
+					exclude: /node_modules/
+					}
+				]
+			}
+}
+```
+### ECMA6 refactor - imports / exports
+
+Additionally, as ECMA6 supports importing from external .js files, in *App.js* we can replace
+
+`var Person = require(‘./modules/Person’);` with `import Person from ‘./modules/Person’;`
+
+and in *Person.js* replace
+
+`module.exports = Person;` with `export default Person;`
