@@ -470,11 +470,11 @@ Webpack will compile all the js modules into a single file that the browser can 
 **3.** Create *webpack.config.js* in the project root folder
 ```
 module.exports = {
-	entry: “./app/assets/scripts/App.js”,
-	output: {
-		path: “./app/temp/scripts”,
-		filename: “App.js”
-		}
+		 entry: __dirname + "/app/assets/scripts/App.js",
+		 output: {
+		 path: __dirname + "/app/temp/scripts",
+		 filename: "App.js"
+	 }
 }
 ```
 
@@ -486,4 +486,43 @@ Each js module (e.g. Person.js) will need an export line at the end, so that Web
 `module.exports = Person;`
 
 **6.** Webpack can also require third-party modules such as jquery.
-If using jquery in project, first install it with `npm install jquery --save`. Then, in each module that uses jquery, at the top put `var $ = require('jquery');
+If using jquery in project, first install it with `npm install jquery --save`. Then, in each module that uses jquery, at the top put `var $ = require('jquery');`
+
+### Integrate Webpack in Gulp Automation
+Browsersync will automatically update if a .js file is edited:
+
+**1.** Install webpack locally `npm install webpack --save-dev`
+
+**2.** Create *gulp/tasks/scripts.js*
+
+**3.** Edit *gulpfile.js* by adding `require(‘./gulp/tasks/scripts’);`
+
+**4.** Add the following to *gulp/tasks/scripts.js*
+```
+var gulp = require(‘gulp’),
+webpack = require(‘webpack’);
+
+gulp.task(‘scripts’, function(callback) {
+	webpack(require(‘../../webpack.config.js’), function(err, stats) {
+		if (err) {
+			console.log(err.toString());
+		}
+		console.log(stats.toString());
+		callback();
+
+	});
+});
+```
+
+**5.** In watch.js, after 'css' and 'watch' tasks, add:
+```
+watch(‘./app/assets/scripts/**/*.js), function() {
+	gulp.start(‘scriptsRefresh’);
+})
+
+gulp.task(‘scriptsRefresh’, [‘scripts’], function() {
+	browserSync.reload();
+)};
+```
+
+Now, webpack will compile a js file for the browser to use from our main file and modules into App.js in the temp folder; and browserSync will automatically update the browser when any js files are edited. If there are any errors it will throw them up without causing browsersync to end.
