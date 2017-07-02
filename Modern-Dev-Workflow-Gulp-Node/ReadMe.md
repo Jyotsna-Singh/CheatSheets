@@ -488,7 +488,7 @@ Each js module (e.g. Person.js) will need an export line at the end, so that Web
 **6.** Webpack can also require third-party modules such as jquery.
 If using jquery in project, first install it with `npm install jquery --save`. Then, in each module that uses jquery, at the top put `var $ = require('jquery');`
 
-### Integrate Webpack in Gulp Automation
+### Integrate Webpack in Gulp Automation  <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png" width="300px" height="auto">
 Browsersync will automatically update if a .js file is edited:
 
 **1.** Install webpack locally `npm install webpack --save-dev`
