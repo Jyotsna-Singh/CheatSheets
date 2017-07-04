@@ -27,6 +27,14 @@
 
 **13.** [Hackerrank 30 day challenge](https://www.hackerrank.com/domains/tutorials/30-days-of-code)
 
+**14.** [30 Days of HTML + CSS](https://www.youtube.com/playlist?list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F)
+
+**15.** [Time Complexity and Memory Allocation](https://www.youtube.com/user/mycodeschool/videos?flow=grid&view=1)
+
+**16.** [Pointers](https://www.youtube.com/playlist?list=PL2_aWCzGMAwLZp6LMUKI3cc7pgGsasm2_)
+
+**17.** [Data Structure](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
+
 -------
 
 | Reimplement Everyday programs                                 |
