@@ -49,7 +49,7 @@
 
 **24.** [Continuous Integration Platform](https://www.subtle.press/course/poor-mans-ci)
 
-**25.** [Build a Simple Compiler] (https://ruslanspivak.com/lsbasi-part1/)
+**25.** [Build a Simple Compiler](https://ruslanspivak.com/lsbasi-part1/)
 
 **26.** [Grow a Compiler](http://www.cs.dartmouth.edu/~mckeeman/cs48/mxcom/gem/html/GrowingCompiler.html)
 
