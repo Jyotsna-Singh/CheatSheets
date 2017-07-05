@@ -53,6 +53,17 @@
 
 **26.** [Grow a Compiler](http://www.cs.dartmouth.edu/~mckeeman/cs48/mxcom/gem/html/GrowingCompiler.html)
 
+**27.** [Vim Adventures](https://vim-adventures.com/)
+
+-------
+## Articles
+
+**1.** [40 CS terms explained in layman terms](http://carlcheo.com/compsci)
+
+**2.** [List of Algorithms](https://www.wikiwand.com/en/List_of_algorithms)
+
+**3.** [Principles of Good Product Design](https://stephenhaunts.com/2013/12/11/dieter-rams-10-principles-of-good-product-design/)
+
 -------
 ## Books
 
