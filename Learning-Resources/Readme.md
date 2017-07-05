@@ -35,6 +35,31 @@
 
 **17.** [Data Structure](https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
 
+**18.** [mycodeschool : Data structures and algorithms tutorials](https://www.youtube.com/user/mycodeschool/videos)
+
+**19.** [Vim Video Tutorial](http://derekwyatt.org/vim/tutorials/index.html)
+
+**20.** [Youtube -Tushar -DS&A](https://www.youtube.com/user/tusharroy2525/videos)
+
+**21.** [OOP-Algorithms](http://oopweb.com/Algorithms/Documents/PLDS210/VolumeFrames.html)
+
+**22.** [Vim Online Editor/Tutorial](https://vimtutorplus.herokuapp.com/exercise/1)
+
+**23.** [Open Data Structure](http://opendatastructures.org/)
+
+**24.** [Continuous Integration Platform](https://www.subtle.press/course/poor-mans-ci)
+
+**25.** [Build a Simple Compiler] (https://ruslanspivak.com/lsbasi-part1/)
+
+**26.** [Grow a Compiler](http://www.cs.dartmouth.edu/~mckeeman/cs48/mxcom/gem/html/GrowingCompiler.html)
+
+-------
+## Books
+
+**1.** [Computer Science Distilled](https://www.amazon.com/Computer-Science-Distilled-Computational-Problems/dp/0997316004)
+
+**2.** [Laravel 5](https://www.tutorialspoint.com/laravel/laravel_tutorial.pdf)
+
 -------
 
 | Reimplement Everyday programs                                 |
