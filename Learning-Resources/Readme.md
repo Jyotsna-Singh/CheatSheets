@@ -1,8 +1,8 @@
 # Learning Resources
 
-**1.** [49 games](http://inventwithpython.com/blog/2012/02/20/i-need-practice-programming-49-ideas-for-game-clones-to-code/) [Python ebook for games](http://inventwithpython.com/inventwithpython_3rd.pdf)
+**1.** [49 games](http://inventwithpython.com/blog/2012/02/20/i-need-practice-programming-49-ideas-for-game-clones-to-code/) &  [Python ebook for games](http://inventwithpython.com/inventwithpython_3rd.pdf)
 
-**2.** [100 Project List](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)
+**2.** [100 Project List](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/) & 
 [100 Project List PDF](http://bgmit.com/alex/wp-content/uploads/2015/11/dreamincode.net-Martyr2s-Mega-Project-Ideas-List.pdf)
 
 **3.** [Standford Coding Assignments](http://nifty.stanford.edu/)
@@ -58,15 +58,15 @@
 -------
 # Video Courses
 
-**1.** (Mastering Markdown)[https://masteringmarkdown.com/]
+**1.** [Mastering Markdown](https://masteringmarkdown.com/)
 
-**2.** (Redux, React.js)[https://learnredux.com/]
+**2.** [Redux, React.js)(https://learnredux.com/)
 
-**3.** (Command Line SuperUser)[https://commandlinepoweruser.com/]
+**3.** [Command Line SuperUser)(https://commandlinepoweruser.com/)
 
-**4.** (Flexbox)[https://flexbox.io/]
+**4.** [Flexbox)(https://flexbox.io/)
 
-**5.** (HTML5 Game Development)[https://www.udacity.com/course/html5-game-development--cs255]
+**5.** [HTML5 Game Development)(https://www.udacity.com/course/html5-game-development--cs255)
 
 -------
 ## Articles
