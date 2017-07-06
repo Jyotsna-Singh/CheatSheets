@@ -56,6 +56,17 @@
 **27.** [Vim Adventures](https://vim-adventures.com/)
 
 -------
+# Video Courses
+
+**1.** (Mastering Markdown)[https://masteringmarkdown.com/]
+
+**2.** (Redux, React.js)[https://learnredux.com/]
+
+**3.** (Command Line SuperUser)[https://commandlinepoweruser.com/]
+
+**4.** (Flexbox)[https://flexbox.io/]
+
+-------
 ## Articles
 
 **1.** [40 CS terms explained in layman terms](http://carlcheo.com/compsci)
