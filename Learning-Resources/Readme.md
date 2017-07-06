@@ -60,13 +60,13 @@
 
 **1.** [Mastering Markdown](https://masteringmarkdown.com/)
 
-**2.** [Redux, React.js)(https://learnredux.com/)
+**2.** [Redux, React.js](https://learnredux.com/)
 
-**3.** [Command Line SuperUser)(https://commandlinepoweruser.com/)
+**3.** [Command Line SuperUser](https://commandlinepoweruser.com/)
 
-**4.** [Flexbox)(https://flexbox.io/)
+**4.** [Flexbox](https://flexbox.io/)
 
-**5.** [HTML5 Game Development)(https://www.udacity.com/course/html5-game-development--cs255)
+**5.** [HTML5 Game Development](https://www.udacity.com/course/html5-game-development--cs255)
 
 -------
 ## Articles
