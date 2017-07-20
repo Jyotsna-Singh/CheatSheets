@@ -45,6 +45,8 @@ To-Do : Create a list featuring all the fish in alphabetical order.
             
         return result
 
+Complexity: *O(n)*
+
 ## 3.2 - Recursion
 
 ## 3.3 - Brute Force
