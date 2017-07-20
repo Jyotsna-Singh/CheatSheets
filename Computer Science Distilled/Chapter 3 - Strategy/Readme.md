@@ -29,6 +29,22 @@ Iterative strategy consists of using loops (*for*, *while*) to repeat a process 
 
 Running thought an input and applying the same operations on every part of it.
 
+Example: Fish Reunion 
+Given : Alphabetically sorted 2 lists of -saltwater fish & -freshwater fish. 
+To-Do : Create a list featuring all the fish in alphabetical order.
+
+    function merge(sea, fresh)
+        result <- List.new
+        
+        while not (sea.empty and fresh.empty)
+            if sea.top_item > fresh.top_item
+                fish <- sea.remove_top_item
+            else
+                fish <- fresh.remove_top_item
+            result.append(fish)
+            
+        return result
+
 ## 3.2 - Recursion
 
 ## 3.3 - Brute Force
