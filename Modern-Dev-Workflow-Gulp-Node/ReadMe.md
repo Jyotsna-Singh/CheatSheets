@@ -10,6 +10,13 @@
   <img src="https://github.com/Jyotsna-Singh/Jyotsna-Singh/blob/master/assets/img/webpack.png" width="300px" height="auto">
 </p>
 
+## Disclaimer
+**1.** Cheatsheet is based on [Udemy - Git a Web Developer Job](https://www.udemy.com/git-a-web-developer-job-mastering-the-modern-workflow) course by [Brad Schiff](https://www.udemy.com/user/bradschiff/)
+
+**2.** I am not affiliated to this course and wont be paid if you buy it. Just a student who loved this course and found it useful.
+
+**3.** Readme structure inspired by [Adam Skuse's cheatsheet](https://github.com/AdamSkuse/cheat-sheets/blob/master/Node-gulp-frontend-dev.md)
+
 ## Index
 
 [Fundamental Concepts](#fundamentals)
