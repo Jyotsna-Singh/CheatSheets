@@ -25,7 +25,7 @@
 
 [Initializing a new project](#initializing-a-new-project)
 
-[BrowserSync](#browserSync)
+[BrowserSync](#browsersync)
 
 [PostCSS Mixins](#post-css-mixins)
 
