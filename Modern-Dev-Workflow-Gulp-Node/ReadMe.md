@@ -19,23 +19,27 @@
 
 ## Index
 
-[Fundamental Concepts](#fundamentals)
+[Fundamental Concepts](#fundamental-concepts)
 
-[Pre-requisites](#prerequisites)
+[Pre-requisites](#pre-requisites)
 
 [Initializing a new project](#initializing-a-new-project)
 
 [BrowserSync](#browserSync)
 
-[PostCSS Mixins](#postcss)
+[PostCSS Mixins](#post-css-mixins)
 
 [Responsive Images](#responsive-images)
 
-[Automatic Sprites](#automatic-Sprite)
+[Automatic Sprites](#automatic-sprites)
 
-[Object-oriented Javascript and Webpack](#oop-js-webpack)
+[Object-oriented Javascript and Webpack](#object-oriented-javascript-and-webpack])
 
 [Babel](#babel)
+
+[Lazy loading images](#lazy-loading-images)
+
+[Preparing files to go live](#preparing-files-to-go-live)
 
 ## Fundamental Concepts
 
