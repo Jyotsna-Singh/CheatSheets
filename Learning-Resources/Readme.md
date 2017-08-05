@@ -68,6 +68,8 @@
 
 **5.** [HTML5 Game Development](https://www.udacity.com/course/html5-game-development--cs255)
 
+**6.** [Crash Course Computer Science](https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
+
 -------
 ## Articles
 
