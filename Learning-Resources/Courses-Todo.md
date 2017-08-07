@@ -25,4 +25,5 @@
 <li> Laravel with Socket.io</li>
 <li> PostGre SQL</li>
 <li> AWS (Amazon Web Services)</li>
+<li> Scrum</li>
 </ol>
