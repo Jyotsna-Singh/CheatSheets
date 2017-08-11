@@ -114,5 +114,8 @@ Decorators allow us to mark a class as an Angular Component & provide metadata t
 <li> Create something awesome!
 </ol>
 
-
+## Tip
+<ol>
+<li> Editors to use - Atom or Visual Studio because they have good typescript highlighting</li>
+</ol>
 
