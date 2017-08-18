@@ -79,6 +79,8 @@
 
 **3.** [Principles of Good Product Design](https://stephenhaunts.com/2013/12/11/dieter-rams-10-principles-of-good-product-design/)
 
+**4.** [Guide to Full Stack Developer in 2017](https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c)
+
 -------
 ## Books
 
