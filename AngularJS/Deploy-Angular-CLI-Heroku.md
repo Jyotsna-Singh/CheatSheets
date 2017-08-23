@@ -1,5 +1,9 @@
 # Steps to Deploy Angular CLI App to Heroku
 
+## Disclaimer
+This readme is based on a youtube tutorial for the same by Wes Doyle
+[Tutorial Link](https://www.youtube.com/watch?v=0bOJjAUXjhI&t=187s)
+
 ## Create account on heroku
 create Heroku account, login and Click on `New`->`Create new app`
 Name your app and choose the runtime.
