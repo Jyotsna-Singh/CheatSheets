@@ -119,3 +119,5 @@ Decorators allow us to mark a class as an Angular Component & provide metadata t
 <li> Editors to use - Atom or Visual Studio because they have good typescript highlighting</li>
 </ol>
 
+## New
+[View how to deploy Angular CLI app to Heroku](https://github.com/Jyotsna-Singh/CheatSheets/blob/master/AngularJS/Deploy-Angular-CLI-Heroku.md)
