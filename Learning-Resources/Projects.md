@@ -8,7 +8,7 @@
 
 **4.** [Angular Firebase Chat App](https://www.youtube.com/watch?v=IVaek-TWE9I)
 
-**5.** [Photo gallery App](https://www.youtube.com/watch?v=V5-CIZTLyvw)
+**5.** [Photo gallery App](https://www.youtube.com/watch?v=V5-CIZTLyvw) :white_check_mark:
 
 **6.** [Firebase Image Gallery App](https://www.youtube.com/watch?v=VkxMmRjPx7k)
 
