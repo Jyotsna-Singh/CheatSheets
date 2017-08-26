@@ -38,6 +38,12 @@ Move ` "@angular/cli": "1.3.1"` `"typescript": "~2.3.3"` and ` "@angular/compile
 
 Edit the `scripts` `  "start": "node server.js",` and add `"postinstall": "ng build --aot --target=production"` to scripts array.
 
+Add
+
+    "engines": {
+	  "node": "6.11.1",
+	  "npm": "3.10.9"
+	},
 
 ## Deploying to heroku
 
