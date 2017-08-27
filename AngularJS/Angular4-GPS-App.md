@@ -126,3 +126,27 @@ Save `.gpx` files in `assets/gpx`
         }
        }
       
+**9.** Edit `activity-list.component.ts`
+
+    export class ActivityListComponent implements OnInit {
+
+    activities: IActivity[];
+    totalActivities: number
+    totalDistance: number
+    firstDate: Date
+
+    constructor(private _activityService: ActivityService) { }
+
+    ngOnInit() {
+      this.activities = this._activityService.getActivities();
+      this.totalActivities = this._activityService.getTotalActivities(this.activities);
+      this.totalDistance = this._activityService.getTotalDistance(this.activities);
+      this.firstDate = this._activityService.getFirstDate(this.activities);
+    }
+    }
+  
+ **10.** Install Frontend frameworks
+ 
+  `npm install --save bootstrap`
+  
+  `npm install --save leaflet`
