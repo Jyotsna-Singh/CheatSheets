@@ -62,5 +62,67 @@ In `activities.ts`, add activity data
           "gpxData": '../../assets/gpx/1.gpx'
         }
       ]
+      
+Save `.gpx` files in `assets/gpx`
 
+**5.** Generate activity service
 
+`ng generate service activity` creates files `activity.service.ts/.spec.ts`. Move these files to `app/services` folder.
+
+**6.** In `activity-list.component.ts` 
+
+    import {ActivityService} from '../services/activity.service';
+    ....
+    constructor(private _activityService:ActivityService) {}
+    
+**7.** Imports in `app.module.ts`
+
+    import {FormsModule} from '@angular/form';
+    import {HttpModule} from '@angular/http';
+    import {ActivityService} from './services/activity.service';
+    ....
+    providers:[ActivityService],
+    
+**8.** Edit `Activity.serivice.ts`
+
+    import {Injectable} from '@angular/core';
+    import {IActivity} from '../shared/activity.model';
+    import {SAVED_ACTIVITIES} from '../shared/activities';
+    
+    @Injectable()
+    export class ActivityService({
+     constructor(){}
+     
+         getActivities(): IActivity[]{
+          return SAVED_ACTIVITIES.slice(0);
+         }
+
+         getTotalActivities(allActivities:IActivity[])
+         {
+          return allActivities.length;
+         }
+
+         getTotalDistance(allActivities:IActivity[]){
+          var totalDistance = 0;
+          for(var i=0; i<allActivities.length; i++)
+          {
+            totalDistance += allActivities[i].distance'
+          }
+          return totalDistance;
+          }
+      
+        getFirstDate(allActivities:IActivity[])
+         {
+            var earliestDate = new Date("01/01/9999");
+            for(var i=0; i<allactivities.length; i++)
+            {
+              var currentDate = allActivities[i].date;
+              if(currentDate < earliestDate)
+              {
+                earliestDate = currentDate;
+              }
+         }
+         return earliestDate;
+        }
+       }
+      
