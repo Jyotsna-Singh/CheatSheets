@@ -55,6 +55,8 @@
 
 **27.** [Vim Adventures](https://vim-adventures.com/)
 
+**28.** [Top-Coder](https://www.topcoder.com/community/data-science/data-science-tutorials/)
+
 -------
 # Video Courses
 
